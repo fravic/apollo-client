@@ -76,6 +76,8 @@ import observableToPromise from './util/observableToPromise';
 
 import { cloneDeep, assign } from 'lodash';
 
+declare var fetch: (input: Request | string, init?: RequestInit) => Promise<Response>;
+
 // make it easy to assert with promises
 chai.use(chaiAsPromised);
 
