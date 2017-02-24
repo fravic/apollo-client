@@ -29,7 +29,8 @@
     "postcoverage": "remap-istanbul --input coverage/coverage.json --type lcovonly --output coverage/lcov.info",
     "testonly": "mocha --reporter spec --full-trace lib/test/tests.js",
     "preanalyze": "npm run compile",
-    "analyze": "webpack -p --config analyze/webpack.config.js"
+    "analyze": "webpack -p --config analyze/webpack.config.js",
+    "postinstall": "npm run compile"
   },
   "repository": {
     "type": "git",
